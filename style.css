@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.swiper {
+  height: 300px;
+}
+
+.swiper-slide {
+  /* background-color: #ccc; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  /* display: block; */
+  /* object-fit: contain; */
+}
+
+figure {
+  margin: 0;
+  height: auto;
+}

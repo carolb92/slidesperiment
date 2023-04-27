@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <figure>   
+                        <img src="img/IMG_9951.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>   
+                        <img src="img/IMG_9952.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>   
+                        <img src="img/IMG_9953.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>   
+                        <img src="img/IMG_9954.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>   
+                        <img src="img/IMG_9955.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>   
+                        <img src="img/IMG_9956.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="swiper-slide">
+                    <figure>   
+                        <img src="img/IMG_9957.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView:1,
+            spaceBetween:10,
+            breakpoints: {
+                768: {
+                    slidesPerView:2,
+                    spaceBetween:20
+                },
+                1024: {
+                    slidesPerView:3,
+                    spaceBetween:30
+                }
+            },
+            freeMode:true,
+            centeredSlides:true,
+            autoplay: {
+                delay:1500,
+                disableOnInteraction:true,
+            },
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable:true,
+            },
+        });
+    </script>
+
+</body>
+</html>
